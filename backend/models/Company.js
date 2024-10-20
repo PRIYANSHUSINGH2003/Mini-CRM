@@ -18,15 +18,15 @@ const Company = sequelize.define('Company', {
         allowNull: false,
     },
     description: {
-        type: DataTypes.TEXT, // Can be null, no default needed
+        type: DataTypes.TEXT,
     },
     createdAt: {
         type: DataTypes.DATE,
         allowNull: false,
-        defaultValue: DataTypes.NOW, // Sets the default as current timestamp
+        defaultValue: DataTypes.NOW, 
     },
 }, {
-    timestamps: false, // Avoid Sequelize adding extra `updatedAt` column
+    timestamps: false, 
 });
 
 // Sync the model with the database
